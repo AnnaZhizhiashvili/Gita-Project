@@ -4,7 +4,6 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
@@ -18,9 +17,7 @@
   },
   "homepage": "https://github.com/AnnaZhizhiashvili/Gita-Project#readme",
   "dependencies": {
-    "json-server": "^0.17.1",
     "prettier": "^2.8.0",
-    "sass": "^1.56.1",
-    "tailwind": "^4.0.0"
+    "sass": "^1.56.1"
   }
 }

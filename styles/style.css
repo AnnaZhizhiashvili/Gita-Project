@@ -33,6 +33,9 @@ header {
   padding: 18px 15px;
   text-transform: capitalize;
 }
+header .icons-container i {
+  font-size: 20px;
+}
 header .fa-search {
   position: relative;
 }
@@ -47,8 +50,45 @@ header .fa-search::after {
 }
 
 .navbar {
-  font-size: 13px;
+  font-size: 16px;
   color: #666666;
+}
+.navbar a {
+  margin: 0px 15px;
+}
+.navbar .categories {
+  position: relative;
+}
+.navbar .categories i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+}
+.navbar .categories .sub-categories {
+  position: absolute;
+  left: 0;
+  top: 18px;
+  box-shadow: rgba(243, 64, 121, 0.2) -5px 5px, rgba(203, 35, 77, 0.3) -10px 10px;
+  font-size: 14px;
+  width: 97px;
+  border-radius: 5px;
+  padding: 12px 17px;
+  background: #fff;
+  color: #343232;
+  opacity: 0;
+  z-index: 2;
+  transition: 0.2s all ease-out;
+}
+.navbar .categories .sub-categories li:not(:last-child) {
+  margin-bottom: 9px;
+}
+.navbar .categories .sub-categories a {
+  margin: 0;
+  font-weight: 300;
+}
+.navbar .categories .sub-categories a:hover {
+  color: #f63a3a;
 }
 .navbar a {
   transition: 0.2s all ease-out;
@@ -58,7 +98,6 @@ header .fa-search::after {
 }
 .navbar .logo {
   color: #000;
-  font-size: 16px;
 }
 .navbar.small-res {
   height: 100vh;
@@ -69,9 +108,25 @@ header .fa-search::after {
   transition: 0.3s all ease-in-out;
   width: 130px;
   padding: 17px;
+  z-index: 1;
 }
 .navbar.small-res.active {
   left: 0;
+}
+.navbar.small-res li {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ededed;
+}
+.navbar.small-res a:hover {
+  color: #f63a3a;
+}
+.navbar.small-res .contact-container {
+  font-size: 13px;
+}
+.navbar.small-res .contact-container > div {
+  margin-bottom: 8px;
+  display: flex;
+  gap: 5px;
 }
 
 .hamburger {
@@ -88,7 +143,33 @@ header .fa-search::after {
   background-color: #f63a3a;
 }
 
-@media (max-width: 576px) {
+.container-1 {
+  height: 80%;
+  position: relative;
+}
+.container-1 p,
+.container-1 h2 {
+  transition: all 0.5s ease-in-out;
+}
+.container-1 .background-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-image: url("../assets/images/background-images/0.jpg");
+  transition: background-image 0.5s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  .navbar.large-res ul {
+    gap: 9px;
+  }
+}
+@media (max-width: 768px) {
   .hamburger {
     display: block;
   }
@@ -114,6 +195,7 @@ header .fa-search::after {
 }
 .logo span {
   font-family: "Kaushan Script", cursive;
+  font-size: 22px;
 }
 
 /* shared styles */
@@ -143,8 +225,20 @@ header .fa-search::after {
   align-items: center;
 }
 
-.margin-bottom-15 {
-  margin-bottom: 15px;
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-5 {
+  margin-bottom: 5px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .btn {
@@ -154,14 +248,14 @@ header .fa-search::after {
   font-weight: 700;
   padding: 3px 20px 0 20px;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
 }
 .btn.subscription {
   background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
   border: 0;
   border-radius: 10px;
   color: #fff;
-  height: 32px;
+  height: 40px;
 }
 .btn.subscription span {
   transition: all 200ms;
@@ -172,4 +266,12 @@ header .fa-search::after {
 .btn.subscription:active span, .btn.subscription:hover span {
   transform: scale(0.7);
   opacity: 0.75;
+}
+
+.filter-colorful {
+  filter: invert(35%) sepia(41%) saturate(6844%) hue-rotate(342deg) brightness(101%) contrast(93%);
+}
+
+.visible {
+  opacity: 0.95 !important;
 }/*# sourceMappingURL=style.css.map */

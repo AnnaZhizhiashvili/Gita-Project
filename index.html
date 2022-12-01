@@ -31,10 +31,21 @@
           <span>Annazine</span>
         </div>
         <div class="flex flex-default gap-20">
-          <nav class="navbar large-res">
+          <nav class="navbar large-res font-bold">
             <ul class="flex gap-20">
               <li><a>Home</a></li>
-              <li><a>Categories</a></li>
+              <li class="categories">
+                <a>Categories</a>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <ul class="sub-categories">
+                  <li><a>general</a></li>
+                  <li><a>business</a></li>
+                  <li><a>entertainment</a></li>
+                  <li><a>science</a></li>
+                  <li><a>sports</a></li>
+                  <li><a>technology</a></li>
+                </ul>
+              </li>
               <li><a>About Us</a></li>
               <li><a>Contact</a></li>
             </ul>
@@ -43,7 +54,7 @@
           <button class="btn subscription" role="button">
             <span class="text">subscribe</span>
           </button>
-          <div>
+          <div class="icons-container">
             <i class="fa fa-search" aria-hidden="true"></i>
             <i class="fa fa-user" aria-hidden="true"></i>
           </div>
@@ -55,18 +66,45 @@
         </div>
       </div>
     </header>
-    <nav class="navbar small-res">
-      <div class="logo flex align-items-center margin-bottom-15">
-        <img src="./assets/logo.svg" />
-        <span>Annazine</span>
+    <div class="navbar small-res">
+      <nav>
+        <div class="logo flex align-items-center margin-bottom-20">
+          <img src="./assets/logo.svg" />
+          <span>Annazine</span>
+        </div>
+        <ul class="flex flex-direction-column gap-20">
+          <li><a>Home</a></li>
+          <li><a>general</a></li>
+          <li><a>business</a></li>
+          <li><a>entertainment</a></li>
+          <li><a>science</a></li>
+          <li><a>sports</a></li>
+          <li><a>technology</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </nav>
+      <div class="contact-container margin-top-20">
+        <div>
+          <i class="fa fa-phone filter-colorful"></i>
+          <span>+995 559 96 54 25</span>
+        </div>
+        <div>
+          <i class="fa fa-home filter-colorful"></i>
+          <span>Angle Bd Abdelmoumen & rue soumaya, Résidence</span>
+        </div>
+        <div>
+          <i class="fa fa-envelope filter-colorful"></i>
+          <span>Anna@gmail.con</span>
+        </div>
       </div>
-      <ul class="flex flex-direction-column gap-20">
-        <li><a>Home</a></li>
-        <li><a>Categories</a></li>
-        <li><a>About Us</a></li>
-        <li><a>Contact</a></li>
-      </ul>
-    </nav>
+    </div>
+
+    <section class="container container-1">
+      <div class="background-img">
+        <h2></h2>
+        <p></p>
+      </div>
+    </section>
   </body>
 
   <script src="./app.js" type="module"></script>
