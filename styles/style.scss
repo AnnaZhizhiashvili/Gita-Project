@@ -14,14 +14,48 @@ li {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+.fa {
+  color: #a7a3a3;
+  transition: 0.2s all ease-out;
+  cursor: pointer;
+  &:hover {
+    color: #000;
+  }
 }
 
 header {
   padding: 18px 15px;
+  text-transform: capitalize;
+  .fa-search {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -2px;
+      height: 100%;
+      background-color: #a7a3a3;
+      width: 0.5px;
+    }
+  }
 }
 
 .navbar {
   font-size: 13px;
+  color: #666666;
+  a {
+    transition: 0.2s all ease-out;
+    &:hover {
+      color: #000;
+    }
+  }
+  .logo {
+    color: #000;
+    font-size: 16px;
+  }
+
   &.small-res {
     height: 100vh;
     background-color: #fff;
@@ -47,7 +81,7 @@ header {
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
-    background-color: black;
+    background-color: #f63a3a;
   }
 }
 
@@ -74,6 +108,8 @@ header {
   width: 40px;
   img {
     width: 100%;
+    filter: invert(76%) sepia(85%) saturate(5625%) hue-rotate(329deg)
+      brightness(88%) contrast(121%);
   }
   span {
     font-family: "Kaushan Script", cursive;
