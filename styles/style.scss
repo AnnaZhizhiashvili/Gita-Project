@@ -202,7 +202,7 @@ header {
         transform: translateY(-50%);
       }
     }
-    .container-2--categories li {
+    .container-2--categories li a {
       transition: 0.2s all ease-out;
       &:hover {
         color: #000;
@@ -294,7 +294,7 @@ $movement: $slider-box-width + $gap;
       }
     }
 
-    &:hover .news-box-large--image {
+    &:hover .news-box-large--image img {
       transform: scale(1.05);
     }
     .news-box-large--info {

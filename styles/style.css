@@ -198,10 +198,10 @@ header .fa-magnifying-glass {
   top: 50%;
   transform: translateY(-50%);
 }
-.container-2 .topbar .container-2--categories li {
+.container-2 .topbar .container-2--categories li a {
   transition: 0.2s all ease-out;
 }
-.container-2 .topbar .container-2--categories li:hover {
+.container-2 .topbar .container-2--categories li a:hover {
   color: #000;
   transform: scale(1.03);
 }
@@ -285,7 +285,7 @@ header .fa-magnifying-glass {
   width: 70%;
   line-height: 20px;
 }
-.container-3 .top-news-box:hover .news-box-large--image {
+.container-3 .top-news-box:hover .news-box-large--image img {
   transform: scale(1.05);
 }
 .container-3 .top-news-box .news-box-large--info {

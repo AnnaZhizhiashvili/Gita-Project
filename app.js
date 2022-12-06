@@ -1,6 +1,15 @@
-import { getLatestPosts, getWeather, getTopPosts } from "./server.js";
+import {
+  getLatestPosts,
+  getWeather,
+  getTopPosts,
+  getByCategory,
+} from "./server.js";
 import { moveSliderBoxes, initializeSlider } from "./slider.js";
-import { initializeTopNews } from "./helper.js";
+import {
+  initializeTopNews,
+  clickStyleEffectOnCategory,
+  filterByCategories,
+} from "./helper.js";
 
 const hamburger = document.querySelector(".hamburger");
 const navMenuSmall = document.querySelector(".navbar.small-res");
@@ -54,12 +63,12 @@ categories.addEventListener("click", () => {
 
 // working with API
 
-const data = await getLatestPosts();
+// const data = await getLatestPosts();
 const topPosts = await getTopPosts();
-// const data = {};
+const data = {};
 // const topPosts = {};
-console.log(topPosts, "top");
 initializeTopNews(topPosts);
+filterByCategories();
 
 let i = 0;
 const changeBackgroundNews = () => {
@@ -89,17 +98,4 @@ moveSliderBoxes();
 
 // on click categories
 
-const filterCategories = document.querySelectorAll(
-  ".container-2--categories li"
-);
-
-filterCategories.forEach((cat, i) => {
-  cat.addEventListener("click", () => {
-    const chosenCategory = document.querySelector(
-      ".container-2--categories .chosen-category"
-    );
-    chosenCategory.classList.remove("chosen-category");
-    cat.classList.add("chosen-category");
-  });
-});
-console.log(filterCategories);
+clickStyleEffectOnCategory();
