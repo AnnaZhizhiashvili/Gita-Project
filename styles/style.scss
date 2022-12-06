@@ -1,9 +1,15 @@
 @import "./colors.scss";
 
-html,
-body {
+*,
+::before,
+::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
   height: 100%;
   font-family: "Roboto", sans-serif;
 }
@@ -18,7 +24,7 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-.fa {
+i {
   color: #a7a3a3;
   transition: 0.2s all ease-out;
   cursor: pointer;
@@ -33,25 +39,17 @@ header {
   .icons-container {
     i {
       font-size: 20px;
+      padding: 0 14px;
     }
   }
-  .fa-search {
+  .fa-magnifying-glass {
     position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: -2px;
-      height: 100%;
-      background-color: #a7a3a3;
-      width: 0.5px;
-    }
+    border-right: #a7a3a3 solid 1px;
   }
 }
 
 .navbar {
-  font-size: 16px;
-  color: #666666;
+  color: $main-gray;
   a {
     margin: 0px 15px;
   }
@@ -61,7 +59,7 @@ header {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      right: 0px;
+      right: -3px;
     }
     .sub-categories {
       position: absolute;
@@ -70,7 +68,6 @@ header {
       box-shadow: rgba(243, 64, 121, 0.2) -5px 5px,
         rgba(203, 35, 77, 0.3) -10px 10px;
       font-size: 14px;
-      width: 97px;
       border-radius: 5px;
       padding: 12px 17px;
       background: #fff;
@@ -104,10 +101,10 @@ header {
     height: 100vh;
     background-color: #fff;
     position: absolute;
+    width: 226px;
     top: 0;
     left: -100%;
     transition: 0.3s all ease-in-out;
-    width: 130px;
     padding: 17px;
     z-index: 1;
     &.active {
@@ -148,16 +145,15 @@ header {
   }
 }
 .container-1 {
-  height: 80%;
-  position: relative;
+  height: calc(100% - 91px);
+
   p,
   h2 {
     transition: all 0.5s ease-in-out;
   }
-  .background-img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
+  .background-news-wrapper {
+    padding: 70px 30px;
+    font-family: "Cairo";
     background-image: url("../assets/images/background-images/0.jpg");
     -webkit-transition: background-image 0.2s ease-in-out;
     transition: background-image 0.5s ease-in-out;
@@ -166,8 +162,73 @@ header {
     height: 100%;
     width: 100%;
     z-index: -1;
+    .news-container {
+      flex-basis: 66%;
+      font-size: 22px;
+    }
+
+    &-box {
+      width: 90%;
+      .news-container,
+      .weather-container {
+        font-family: "Julee";
+      }
+    }
   }
 }
+$slider-box-width: 45%;
+$gap: 4%;
+$movement: $slider-box-width + $gap;
+
+.visible-box {
+  background-color: white;
+  height: 216px;
+  position: absolute;
+  padding-top: 18px;
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+  right: 4%;
+  top: 84%;
+  border-radius: 20px;
+  .slider-box {
+    position: absolute;
+    border-radius: 50px 0 0 50px;
+    width: $slider-box-width;
+    align-items: center;
+    color: #000;
+    font-weight: 700;
+    transition: 0.5s all ease-out;
+    &--text {
+      justify-content: space-between;
+      height: 100%;
+    }
+    cursor: pointer;
+    i {
+      color: #000;
+    }
+    &--img {
+      border-radius: 15px;
+      background-size: cover;
+      height: 120px;
+      flex-basis: 76%;
+      max-width: 120px;
+    }
+    &:nth-child(1) {
+      left: -$slider-box-width;
+    }
+    &:nth-child(2) {
+      left: $gap;
+    }
+    &:nth-child(3) {
+      left: calc($gap + $movement);
+    }
+    &:nth-child(4) {
+      left: calc($gap + (2 * $movement));
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .navbar {
     &.large-res {
@@ -198,7 +259,7 @@ header {
 }
 
 .logo {
-  width: 40px;
+  width: 55px;
   img {
     width: 100%;
     filter: invert(76%) sepia(85%) saturate(5625%) hue-rotate(329deg)
@@ -233,6 +294,9 @@ header {
 .gap-20 {
   gap: 20px;
 }
+.gap-10 {
+  gap: 10px;
+}
 
 .align-items-center {
   align-items: center;
@@ -254,6 +318,18 @@ header {
   font-weight: 700;
 }
 
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-21 {
+  font-size: 21px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
 .btn {
   cursor: pointer;
   padding: 0 48px;
@@ -266,7 +342,6 @@ header {
     background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
     border: 0;
     border-radius: 10px;
-    color: #fff;
     height: 40px;
     span {
       transition: all 200ms;
@@ -289,4 +364,20 @@ header {
 
 .visible {
   opacity: 0.95 !important;
+}
+
+.badge {
+  background: #f63a3a;
+  line-height: 30px;
+  width: 100px;
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.color-white {
+  color: #fff;
 }

@@ -7,7 +7,7 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +18,14 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
       rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Julee"
     />
     <link href="./styles/style.css" rel="stylesheet" />
   </head>
@@ -31,7 +39,7 @@
           <span>Annazine</span>
         </div>
         <div class="flex flex-default gap-20">
-          <nav class="navbar large-res font-bold">
+          <nav class="navbar large-res font-bold font-size-16">
             <ul class="flex gap-20">
               <li><a>Home</a></li>
               <li class="categories">
@@ -51,12 +59,12 @@
             </ul>
           </nav>
 
-          <button class="btn subscription" role="button">
+          <button class="btn subscription color-white" role="button">
             <span class="text">subscribe</span>
           </button>
           <div class="icons-container">
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <i class="fa fa-user" aria-hidden="true"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
           </div>
           <div class="hamburger">
             <span class="bar"></span>
@@ -100,11 +108,80 @@
     </div>
 
     <section class="container container-1">
-      <div class="background-img">
-        <h2></h2>
-        <p></p>
+      <div class="background-news-wrapper">
+        <div
+          class="background-news-wrapper-box flex gap-20 justify-content-between"
+        >
+          <div
+            class="news-container color-white flex flex-direction-column gap-20"
+          >
+            <div class="flex align-items-center gap-20">
+              <div>
+                <span class="news-category badge color-white"></span>
+              </div>
+              <div>
+                <i class="fa-solid fa-calendar-days color-white"></i>
+                <span class="news-date font-size-16"></span>
+              </div>
+            </div>
+            <h2 class="news-title"></h2>
+            <span class="news-author"></span>
+          </div>
+          <div class="weather-container color-white font-size-21">
+            <div class="margin-bottom-5">
+              <span>Georgia, Tbilisi</span>
+            </div>
+            <div class="flex gap-10">
+              <i class="fa-solid fa-cloud color-white"></i>
+              <span class="temperature-wrapper"></span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+      <div class="visible-box">
+       <div class="slider-box flex gap-20">
+          <div class="slider-box--img"></div>
+          <div class="slider-box--text flex flex-direction-column gap-10">
+            <div class="slider-box---date">
+                <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
+                <span class="news-date font-size-16"></span>
+            </div>
+            <p class="slider-box--text-title font-size-20"></p>
+          </div>
+        </div>
+        <div class="slider-box flex gap-20">
+          <div class="slider-box--img"></div>
+          <div class="slider-box--text flex flex-direction-column gap-10">
+            <div class="slider-box---date">
+                <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
+                <span class="news-date font-size-16"></span>
+            </div>
+            <p class="slider-box--text-title font-size-20"></p>
+          </div>
+        </div>
+       <div class="slider-box flex gap-20 ">
+          <div class="slider-box--img"></div>
+          <div class="slider-box--text flex flex-direction-column gap-10">
+            <div class="slider-box---date">
+                <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
+                <span class="news-date font-size-16"></span>
+            </div>
+            <p class="slider-box--text-title font-size-20"></p>
+          </div>
+        </div>
+       <div class="slider-box flex gap-20 ">
+          <div class="slider-box--img"></div>
+          <div class="slider-box--text flex flex-direction-column gap-10">
+            <div class="slider-box---date">
+                <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
+                <span class="news-date font-size-16"></span>
+            </div>
+            <p class="slider-box--text-title font-size-20"></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 
   <script src="./app.js" type="module"></script>
