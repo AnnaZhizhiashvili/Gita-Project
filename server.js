@@ -1,22 +1,35 @@
-const apiKey = "5c06f79c53cf7004265be2850817d2db";
+const apiKey = "715a068203ec45c3bac1c8021bbadd28";
 
-const ROOT_URL = "http://api.mediastack.com/v1/news";
+const ROOT_URL = `https://newsapi.org/v2`;
 
 const urls = {
-  all_posts: `${ROOT_URL}?access_key=${apiKey}&languages=en`,
+  latest_posts: `${ROOT_URL}/everything?q=all&pageSize=4&apiKey=${apiKey}`,
+  top_posts: `${ROOT_URL}/top-headlines?q=all&pageSize=4&apiKey=${apiKey}`,
+
   weatherInTbilisi:
     "https://api.open-meteo.com/v1/forecast?latitude=41.69&longitude=44.83&hourly=temperature_2m",
 };
 
-export async function getData() {
+export async function getLatestPosts() {
   let resJson;
   try {
-    const res = await fetch(urls.all_posts);
+    const res = await fetch(urls.latest_posts);
     resJson = await res.json();
   } catch (err) {
     console.log(err);
   }
-  return resJson.data;
+  return resJson.articles;
+}
+
+export async function getTopPosts() {
+  let resJson;
+  try {
+    const res = await fetch(urls.top_posts);
+    resJson = await res.json();
+  } catch (err) {
+    console.log(err);
+  }
+  return resJson.articles;
 }
 
 export async function getWeather() {
