@@ -35,7 +35,7 @@
         class="header-container flex justify-content-between align-items-center"
       >
         <div class="logo flex align-items-center">
-          <img src="./assets/logo.svg" />
+          <img src="./assets/logo.svg" alt="logo" />
           <span>Annazine</span>
         </div>
         <div class="flex flex-default gap-20">
@@ -59,14 +59,14 @@
             </ul>
           </nav>
 
-          <button class="btn subscription color-white font-size-14" role="button">
+          <button class="btn subscription color-white font-size-14">
             <span class="text">subscribe</span>
           </button>
           <div class="icons-container">
             <i class="fa-solid fa-magnifying-glass"></i>
             <i class="fa-regular fa-user"></i>
           </div>
-          <div class="hamburger">
+          <div class="hamburger pointer">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -77,7 +77,7 @@
     <div class="navbar small-res">
       <nav>
         <div class="logo flex align-items-center margin-bottom-20">
-          <img src="./assets/logo.svg" />
+          <img src="./assets/logo.svg" alt="logo" />
           <span>Annazine</span>
         </div>
         <ul class="flex flex-direction-column gap-20">
@@ -117,7 +117,9 @@
           >
             <div class="flex align-items-center gap-20">
               <div>
-                <span class="news-category badge color-white font-size-14">General</span>
+                <span class="news-category badge color-white font-size-14"
+                  >General</span
+                >
               </div>
               <div>
                 <i class="fa-solid fa-calendar-days color-white"></i>
@@ -139,87 +141,95 @@
         </div>
       </div>
     </section>
-      <div class="visible-box">
-       <div class="slider-box flex gap-20">
-          <div class="slider-box--img"></div>
-          <div class="slider-box--text flex flex-direction-column gap-10">
-            <div class="slider-box---date">
-                <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
-                <span class="news-date font-size-16"></span>
-            </div>
-            <p class="slider-box--text-title font-size-20"></p>
+    <div class="visible-box">
+      <div class="slider-box flex gap-20 pointer">
+        <div class="slider-box--img"></div>
+        <div class="slider-box--text flex flex-direction-column gap-10">
+          <div class="slider-box---date">
+            <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
+            <span class="news-date font-size-16"></span>
           </div>
+          <p class="slider-box--text-title font-size-20"></p>
         </div>
-        <div class="slider-box flex gap-20">
-          <div class="slider-box--img"></div>
-          <div class="slider-box--text flex flex-direction-column gap-10">
-            <div class="slider-box---date">
-                <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
-                <span class="news-date font-size-16"></span>
-            </div>
-            <p class="slider-box--text-title font-size-20"></p>
+      </div>
+      <div class="slider-box flex gap-20">
+        <div class="slider-box--img"></div>
+        <div class="slider-box--text flex flex-direction-column gap-10">
+          <div class="slider-box---date">
+            <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
+            <span class="news-date font-size-16"></span>
           </div>
+          <p class="slider-box--text-title font-size-20"></p>
         </div>
-       <div class="slider-box flex gap-20 ">
-          <div class="slider-box--img"></div>
-          <div class="slider-box--text flex flex-direction-column gap-10">
-            <div class="slider-box---date">
-                <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
-                <span class="news-date font-size-16"></span>
-            </div>
-            <p class="slider-box--text-title font-size-20"></p>
+      </div>
+      <div class="slider-box flex gap-20">
+        <div class="slider-box--img"></div>
+        <div class="slider-box--text flex flex-direction-column gap-10">
+          <div class="slider-box---date">
+            <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
+            <span class="news-date font-size-16"></span>
           </div>
+          <p class="slider-box--text-title font-size-20"></p>
         </div>
-       <div class="slider-box flex gap-20 ">
-          <div class="slider-box--img"></div>
-          <div class="slider-box--text flex flex-direction-column gap-10">
-            <div class="slider-box---date">
-                <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
-                <span class="news-date font-size-16"></span>
-            </div>
-            <p class="slider-box--text-title font-size-20"></p>
+      </div>
+      <div class="slider-box flex gap-20">
+        <div class="slider-box--img"></div>
+        <div class="slider-box--text flex flex-direction-column gap-10">
+          <div class="slider-box---date">
+            <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
+            <span class="news-date font-size-16"></span>
           </div>
+          <p class="slider-box--text-title font-size-20"></p>
         </div>
       </div>
     </div>
 
     <section class="container container-2">
-      <div class="flex font-bold align-items-center justify-content-between topbar">
+      <div
+        class="flex font-bold align-items-center justify-content-between topbar"
+      >
         <h4 class="font-size-30 topbar-header">Trending News</h4>
-         <ul class="container-2--categories font-size-14 flex gap-20">
-                  <li class="chosen-category"><a>general</a></li>
-                  <li><a>business</a></li>
-                  <li><a>entertainment</a></li>
-                  <li><a>science</a></li>
-                  <li><a>sports</a></li>
-                  <li><a>technology</a></li>
-          </ul>
+        <ul class="container-2--categories font-size-14 flex gap-20">
+          <li class="chosen-category"><a>general</a></li>
+          <li><a>business</a></li>
+          <li><a>entertainment</a></li>
+          <li><a>science</a></li>
+          <li><a>sports</a></li>
+          <li><a>technology</a></li>
+        </ul>
       </div>
     </section>
-    <section class="container container-3 flex justify-content-around"> 
-      <div class="top-news-box border-radius">
-        <div class="news-box-large--image"><img class="border-radius"></div>
+    <section class="container container-3 flex justify-content-around">
+      <div class="top-news-box pointer border-radius">
+        <div class="news-box-large--image">
+          <img class="border-radius" alt="news image" />
+        </div>
         <div class="news-box-large--info color-white">
           <div class="flex gap-20 margin-bottom-20">
-              <span class="news-category badge color-white font-size-14">General</span>
-              <div class="date-container">
-                  <i class="fa-solid fa-calendar-days font-size-21 color-white"></i>
-                  <span class="news-date font-size-16 font-bold"></span>
-              </div>
+            <span class="news-category badge color-white font-size-14"
+              >General</span
+            >
+            <div class="date-container">
+              <i class="fa-solid fa-calendar-days font-size-21 color-white"></i>
+              <span class="news-date font-size-16 font-bold"></span>
+            </div>
           </div>
           <h5 class="font-size-21"></h5>
         </div>
       </div>
-
-      <div class="top-news-box flex flex-direction-column gap-20">
+      <div class="top-news-box pointer flex flex-direction-column gap-20">
         <div class="flex gap-20 small-news-wrapper">
-          <div class="news-box-small--image"><img class="border-radius"></div>
+          <div class="news-box-small--image">
+            <img class="border-radius" alt="news image" />
+          </div>
           <div class="news-box-small--info">
             <div>
-              <span class="news-category badge badge-light font-size-14">General</span>
+              <span class="news-category badge badge-light font-size-14"
+                >General</span
+              >
               <div class="date-container color-gray">
-                  <i class="fa-solid fa-calendar-days font-size-21"></i>
-                  <span class="news-date font-size-16"></span>
+                <i class="fa-solid fa-calendar-days font-size-21"></i>
+                <span class="news-date font-size-16"></span>
               </div>
             </div>
             <h5 class="font-size-16 font-bold"></h5>
@@ -227,32 +237,234 @@
         </div>
 
         <div class="flex gap-20 small-news-wrapper">
-          <div class="news-box-small--image"><img class="border-radius"></div>
+          <div class="news-box-small--image">
+            <img class="border-radius" alt="news image" />
+          </div>
           <div class="news-box-small--info">
             <div>
-              <span class="news-category badge badge-light font-size-14">General</span>
+              <span class="news-category badge badge-light font-size-14"
+                >General</span
+              >
               <div class="date-container color-gray">
-                  <i class="fa-solid fa-calendar-days font-size-21"></i>
-                  <span class="news-date font-size-16"></span>
+                <i class="fa-solid fa-calendar-days font-size-21"></i>
+                <span class="news-date font-size-16"></span>
               </div>
             </div>
             <h5 class="font-size-16 font-bold"></h5>
           </div>
         </div>
         <div class="flex gap-20 small-news-wrapper">
-          <div class="news-box-small--image"><img class="border-radius"></div>
+          <div class="news-box-small--image">
+            <img class="border-radius" alt="news image" />
+          </div>
           <div class="news-box-small--info">
             <div>
-                <span class="news-category badge badge-light font-size-14">General</span>
-                <div class="date-container">
-                    <i class="fa-solid fa-calendar-days font-size-21"></i>
-                    <span class="news-date font-size-16"></span>
-                </div>
+              <span class="news-category badge badge-light font-size-14"
+                >General</span
+              >
+              <div class="date-container">
+                <i class="fa-solid fa-calendar-days font-size-21"></i>
+                <span class="news-date font-size-16"></span>
+              </div>
             </div>
             <h5 class="font-size-16 font-bold"></h5>
           </div>
+        </div>
       </div>
     </section>
+
+    <section class="container container-4 flex justify-content-between">
+      <div class="latest-news-main">
+        <div
+          class="flex font-bold align-items-center justify-content-between topbar margin-bottom-30"
+        >
+          <h4 class="font-size-30 topbar-header large">Latest News</h4>
+        </div>
+        <div
+          class="latest-news-container main flex wrap justify-content-between align-items-center gap-35"
+        >
+          <div class="latest-new pointer">
+            <div class="img-wrapper">
+              <img alt="news image" />
+            </div>
+            <div class="latest-new--info flex flex-direction-column gap-10">
+              <div class="flex align-items-center gap-10">
+                <div class="badge badge-light">Latest</div>
+                <div class="flex gap-5 color-gray">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <span class="news-date font-size-14"></span>
+                </div>
+              </div>
+              <div>
+                <h4
+                  class="title font-size-20 line-height-25 margin-bottom-5"
+                ></h4>
+                <p class="description color-gray"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="latest-news-container sidebar flex justify-content-between flex-direction-column"
+      >
+        <div class="sidebar-title">
+          <div>
+            <h4 class="badge badge-light">Latest Post</h4>
+          </div>
+        </div>
+        <div class="sidebar-posts margin-top-20 pointer">
+          <div class="latest-news-box flex flex-direction-column gap-20">
+            <div class="flex gap-5 small-news-wrapper latest-new">
+              <div class="news-box-small--image">
+                <img class="border-radius" alt="news image" />
+              </div>
+              <div class="news-box-small--info font-size-14 gap-5">
+                <div>
+                  <div class="date-container color-gray">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span class="news-date"></span>
+                  </div>
+                </div>
+                <h5 class="font-bold title"></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-poster">
+          <div class="poster-logo logo flex align-items-center">
+            <img src="./assets/logo.svg" alt="logo" class="logo-img" />
+            <span class="color-white">Annazine</span>
+          </div>
+          <div class="poster-info margin margin-bottom-20 margin-top-20">
+            Built with amazing platform & framwork. You can use anyway in blog,
+            news & magazine.
+          </div>
+          <div class="poster-ad">
+            <button class="btn btn-default color-white font-size-14">
+              <span class="text">purchase</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container container-5 flex">
+      <div class="box instagram flex justify-content-center align-items-center">
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fab fa-instagram"></i>
+          <span> Instagram <span>Feeds</span></span>
+        </a>
+      </div>
+      <div class="box facebook flex justify-content-center align-items-center">
+        <a>
+          <i class="fab fa-facebook-f"></i>
+          <span>Facebook <span>Share</span></span>
+        </a>
+      </div>
+      <div class="box twitter flex justify-content-center align-items-center">
+        <a href="https://twitter.com/" target="_blank">
+          <i class="fab fa-twitter"></i>
+          <span>Twitter <span>Feeds</span></span>
+        </a>
+      </div>
+      <div class="box pinterest flex justify-content-center align-items-center">
+        <a href="https://www.pinterest.com/" target="_blank">
+          <i class="fab fa-pinterest-p"></i>
+          <span>Pinterest <span>Share</span></span>
+        </a>
+      </div>
+      <div class="box dribble flex justify-content-center align-items-center">
+        <a href="https://dribbble.com/" target="_blank">
+          <i class="fab fa-dribbble"></i>
+          <span>Dribbble <span>Share</span></span></a
+        >
+      </div>
+    </section>
+    <footer class="color-white">
+      <div class="flex footer-main-container justify-content-between gap-35">
+        <div class="footer-box">
+          <div class="margin-bottom-30">
+            <h4 class="topbar-header">Categories</h4>
+          </div>
+          <div class="color-light-gray flex gap-35 justify-content-between">
+            <ul class="sub-categories">
+              <li><a>general</a></li>
+              <li><a>business</a></li>
+            </ul>
+            <ul class="sub-categories">
+              <li><a>entertainment</a></li>
+              <li><a>science</a></li>
+            </ul>
+            <ul class="sub-categories">
+              <li><a>science</a></li>
+              <li><a>sports</a></li>
+              <li><a>technology</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-box">
+          <div>
+            <div class="margin-bottom-30">
+              <h4 class="topbar-header">Newsletter</h4>
+            </div>
+            <div>
+              <form action="#">
+                <div class="input-wrapper margin-bottom-20">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" placeholder="Enter your name" />
+                </div>
+                <div class="input-wrapper margin-bottom-20">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" placeholder="Enter your email address" />
+                </div>
+                <div>
+                  <button class="btn btn-default">
+                    <i class="fa-regular fa-paper-plane color-white"></i>
+                    Subscribe Now
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-box">
+          <div>
+            <div class="margin-bottom-30">
+              <h4>About us</h4>
+            </div>
+            <p class="color-light-gray margin-bottom-30">
+              Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspend isse ultrices gravida.
+            </p>
+          </div>
+          <div>
+            <div class="logo flex align-items-center">
+              <img src="./assets/logo.svg" alt="logo" />
+              <span>Annazine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright-box color-gray flex justify-content-between">
+      <div>
+        <p>
+          Copyright © built by
+          <span class="color-white">Ana Zhizhiashvili</span> - 2022
+        </p>
+      </div>
+      <div>
+        <ul class="flex gap-20">
+          <li><a>Privacy & Policy</a></li>
+          <li><a>Claim A Report</a></li>
+          <li><a>Careers</a></li>
+        </ul>
+      </div>
+    </div>
   </body>
 
   <script src="./app.js" type="module"></script>
