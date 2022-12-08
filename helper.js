@@ -52,3 +52,57 @@ export const filterByCategories = async () => {
     });
   });
 };
+
+// latest news
+
+const latestNewsLargeBox = document.querySelector(
+  ".container-4 .latest-news-main .latest-new"
+);
+const latestNewsMainContainer = document.querySelector(
+  ".container-4 .latest-news-container.main"
+);
+
+export const initializeLatestPosts = (latestData) => {
+  for (let i = 0; i < 5; i++) {
+    const clonedNode = latestNewsLargeBox.cloneNode(true);
+    latestNewsMainContainer.append(clonedNode);
+  }
+
+  const latestNewsSmallBox = document.querySelector(
+    ".container-4 .sidebar .latest-news-box "
+  );
+  const latestNewsSidebarContainer = document.querySelector(
+    ".container-4 .sidebar-posts"
+  );
+  for (let i = 0; i < 5; i++) {
+    const clonedNode = latestNewsSmallBox.cloneNode(true);
+    latestNewsSidebarContainer.append(clonedNode);
+  }
+
+  const latestNewsImages = document.querySelectorAll(
+    ".container-4 .latest-news-container img:not(.logo-img)"
+  );
+
+  const latestNewsDates = document.querySelectorAll(
+    ".container-4 .latest-news-container .news-date"
+  );
+
+  const latestNewsTitles = document.querySelectorAll(
+    ".container-4 .latest-news-container .title"
+  );
+
+  const latestNewsDescriptions = document.querySelectorAll(
+    ".container-4 .latest-news-container .description"
+  );
+  for (let i = 0; i < latestNewsImages.length; i++) {
+    latestNewsImages[i].src = latestData[i]?.urlToImage;
+    latestNewsDates[i].innerHTML = latestData[i]?.publishedAt.substring(0, 10);
+    latestNewsTitles[i].innerHTML = truncateText(latestData[i]?.title, 60);
+    if (latestNewsDescriptions[i]) {
+      latestNewsDescriptions[i].innerHTML = truncateText(
+        latestData[i]?.description,
+        100
+      );
+    }
+  }
+};

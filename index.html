@@ -41,7 +41,7 @@
         <div class="flex flex-default gap-20">
           <nav class="navbar large-res font-bold font-size-16">
             <ul class="flex gap-20">
-              <li><a>Home</a></li>
+              <li><a href="./index.html">Home</a></li>
               <li class="categories">
                 <a>Categories</a>
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -54,8 +54,8 @@
                   <li><a>technology</a></li>
                 </ul>
               </li>
-              <li><a>About Us</a></li>
-              <li><a>Contact</a></li>
+              <li><a href="./pages/about.html">About Us</a></li>
+              <li><a href="./pages/contact.html">Contact</a></li>
             </ul>
           </nav>
 
@@ -188,7 +188,10 @@
       <div
         class="flex font-bold align-items-center justify-content-between topbar"
       >
-        <h4 class="font-size-30 topbar-header">Trending News</h4>
+        <div class="text-with-line-wrapper">
+          <h4 class="font-size-30 topbar-header">Trending News</h4>
+          <span class="line"></span>
+        </div>
         <ul class="container-2--categories font-size-14 flex gap-20">
           <li class="chosen-category"><a>general</a></li>
           <li><a>business</a></li>
@@ -200,8 +203,8 @@
       </div>
     </section>
     <section class="container container-3 flex justify-content-around">
-      <div class="top-news-box pointer border-radius">
-        <div class="news-box-large--image">
+      <div class="top-news-box pointer">
+        <div class="news-box-large--image border-radius">
           <img class="border-radius" alt="news image" />
         </div>
         <div class="news-box-large--info color-white">
@@ -278,7 +281,10 @@
         <div
           class="flex font-bold align-items-center justify-content-between topbar margin-bottom-30"
         >
-          <h4 class="font-size-30 topbar-header large">Latest News</h4>
+          <div class="text-with-line-wrapper">
+            <h4 class="font-size-30 topbar-header large">Latest News</h4>
+            <span class="line"></span>
+          </div>
         </div>
         <div
           class="latest-news-container main flex wrap justify-content-between align-items-center gap-35"
@@ -387,7 +393,10 @@
       <div class="flex footer-main-container justify-content-between gap-35">
         <div class="footer-box">
           <div class="margin-bottom-30">
-            <h4 class="topbar-header">Categories</h4>
+            <div class="margin-bottom-30 text-with-line-wrapper">
+              <h4 class="topbar-header">Categories</h4>
+              <span class="line"></span>
+            </div>
           </div>
           <div class="color-light-gray flex gap-35 justify-content-between">
             <ul class="sub-categories">
@@ -399,7 +408,6 @@
               <li><a>science</a></li>
             </ul>
             <ul class="sub-categories">
-              <li><a>science</a></li>
               <li><a>sports</a></li>
               <li><a>technology</a></li>
             </ul>
@@ -407,8 +415,9 @@
         </div>
         <div class="footer-box">
           <div>
-            <div class="margin-bottom-30">
+            <div class="margin-bottom-30 text-with-line-wrapper">
               <h4 class="topbar-header">Newsletter</h4>
+              <span class="line"></span>
             </div>
             <div>
               <form action="#">
@@ -433,7 +442,10 @@
         <div class="footer-box">
           <div>
             <div class="margin-bottom-30">
-              <h4>About us</h4>
+              <div class="text-with-line-wrapper">
+                <h4>About us</h4>
+                <span class="line"></span>
+              </div>
             </div>
             <p class="color-light-gray margin-bottom-30">
               Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do

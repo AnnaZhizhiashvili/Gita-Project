@@ -9,6 +9,7 @@ import {
   initializeTopNews,
   clickStyleEffectOnCategory,
   filterByCategories,
+  initializeLatestPosts,
 } from "./helper.js";
 
 const hamburger = document.querySelector(".hamburger");
@@ -63,10 +64,10 @@ categories.addEventListener("click", () => {
 
 // working with API
 
-const data = await getLatestPosts();
-const topPosts = await getTopPosts();
-// const data = {};
-// const topPosts = {};
+// const data = await getLatestPosts();
+// const topPosts = await getTopPosts();
+const data = {};
+const topPosts = {};
 initializeTopNews(topPosts);
 filterByCategories();
 
@@ -100,57 +101,18 @@ moveSliderBoxes();
 
 clickStyleEffectOnCategory();
 
-// latest news
+initializeLatestPosts(data);
 
-const latestNewsLargeBox = document.querySelector(
-  ".container-4 .latest-news-main .latest-new"
-);
-const latestNewsMainContainer = document.querySelector(
-  ".container-4 .latest-news-container.main"
-);
+const goToCategoryPage = (category) => {
+  console.log(category);
+};
 
-for (let i = 0; i < 5; i++) {
-  const clonedNode = latestNewsLargeBox.cloneNode(true);
-  latestNewsMainContainer.append(clonedNode);
-}
+const categoryLinks = document.querySelectorAll(".category-link");
+categoryLinks.forEach((node) => {
+  const category = node.innerHTML;
+  console.log(category);
 
-const latestNewsSmallBox = document.querySelector(
-  ".container-4 .sidebar .latest-news-box "
-);
-const latestNewsSidebarContainer = document.querySelector(
-  ".container-4 .sidebar-posts"
-);
-for (let i = 0; i < 5; i++) {
-  const clonedNode = latestNewsSmallBox.cloneNode(true);
-  latestNewsSidebarContainer.append(clonedNode);
-}
+  node.addEventListener("click", goToCategoryPage(category));
+});
 
-const latestNewsImages = document.querySelectorAll(
-  ".container-4 .latest-news-container img:not(.logo-img)"
-);
-console.log(latestNewsImages);
-
-const latestNewsDates = document.querySelectorAll(
-  ".container-4 .latest-news-container .news-date"
-);
-
-const latestNewsTitles = document.querySelectorAll(
-  ".container-4 .latest-news-container .title"
-);
-
-const latestNewsDescriptions = document.querySelectorAll(
-  ".container-4 .latest-news-container .description"
-);
-
-console.log(latestNewsTitles, latestNewsDescriptions);
-for (let i = 0; i < latestNewsImages.length; i++) {
-  latestNewsImages[i].src = data[i]?.urlToImage;
-  latestNewsDates[i].innerHTML = data[i]?.publishedAt.substring(0, 10);
-  latestNewsTitles[i].innerHTML = truncateText(data[i]?.title, 60);
-  if (latestNewsDescriptions[i]) {
-    latestNewsDescriptions[i].innerHTML = truncateText(
-      data[i]?.description,
-      100
-    );
-  }
-}
+console.log(categoryLinks);
