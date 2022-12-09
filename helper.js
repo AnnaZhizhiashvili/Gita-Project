@@ -27,13 +27,14 @@ const filterCategories = document.querySelectorAll(
 );
 
 export const clickStyleEffectOnCategory = () => {
+  console.log("here");
   filterCategories.forEach((cat, i) => {
     cat.addEventListener("click", () => {
       const chosenCategory = document.querySelector(
-        ".container-2--categories .chosen-category"
+        ".container-2--categories .active-red"
       );
-      chosenCategory.classList.remove("chosen-category");
-      cat.classList.add("chosen-category");
+      chosenCategory.classList.remove("active-red");
+      cat.classList.add("active-red");
     });
   });
 };

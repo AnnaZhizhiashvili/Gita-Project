@@ -40,7 +40,7 @@
       <div class="flex flex-default gap-20">
         <nav class="navbar large-res font-bold font-size-16">
           <ul class="flex gap-20">
-            <li><a>Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li class="categories">
               <a>Categories</a>
               <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -65,8 +65,8 @@
                 </li>
               </ul>
             </li>
-            <li><a>About Us</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a class="active-red">Contact</a></li>
           </ul>
         </nav>
 
@@ -85,6 +85,38 @@
       </div>
     </div>
   </header>
+  <div class="navbar small-res">
+    <nav>
+      <div class="logo flex align-items-center margin-bottom-20">
+        <img src="./assets/logo.svg" alt="logo" />
+        <span>Annazine</span>
+      </div>
+      <ul class="flex flex-direction-column gap-20">
+        <li><a href="../index.html">Home</a></li>
+        <li><a>general</a></li>
+        <li><a>business</a></li>
+        <li><a>entertainment</a></li>
+        <li><a>science</a></li>
+        <li><a>sports</a></li>
+        <li><a>technology</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </nav>
+    <div class="contact-container margin-top-20">
+      <div>
+        <i class="fa fa-phone filter-colorful"></i>
+        <span>+995 559 96 54 25</span>
+      </div>
+      <div>
+        <i class="fa fa-home filter-colorful"></i>
+        <span>Angle Bd Abdelmoumen & rue soumaya, Résidence</span>
+      </div>
+      <div>
+        <i class="fa fa-envelope filter-colorful"></i>
+        <span>Anna@gmail.con</span>
+      </div>
+    </div>
+  </div>
 
   <section class="container contact-page">
     <div>
@@ -104,29 +136,37 @@
         <div class="contact-form-header">
           <h4 class="font-size-20">Get in touch & let us know</h4>
         </div>
-        <div class="contact-inputs-container margin-top-20">
+        <div class="contact-inputs-container">
           <div
-            class="text-inputs-box flex justify-content-between margin-bottom-20"
+            class="text-inputs-box flex justify-content-between margin-bottom-30"
           >
             <div class="input-box">
-              <input type="text" placeholder="Enter full name" />
+              <input
+                type="text"
+                placeholder="Enter full name"
+                name="full-name"
+                id="name"
+              />
               <i class="fa-regular fa-user"></i>
+              <span id="nameError"></span>
             </div>
             <div class="input-box">
-              <input type="email" placeholder="Enter address" />
+              <input placeholder="Enter address" name="email" id="email" />
               <i class="fa-regular fa-envelope"></i>
+              <span id="emailError"></span>
             </div>
           </div>
 
           <div class="input-box textarea-box margin-bottom-20">
             <textarea
-              name="#"
-              id="#"
+              name="message"
+              id="message"
               cols="30"
               rows="10"
               placeholder="Enter message"
             ></textarea>
             <i class="fa fa-pencil" aria-hidden="true"></i>
+            <span id="textareaError"></span>
           </div>
         </div>
         <div class="text-align-center">
@@ -147,7 +187,7 @@
             <span class="line"></span>
           </div>
         </div>
-        <div class="color-light-gray flex gap-35 justify-content-between">
+        <div class="color-light-grey flex gap-35 justify-content-between">
           <ul class="sub-categories">
             <li><a>general</a></li>
             <li><a>business</a></li>
@@ -196,7 +236,7 @@
               <span class="line"></span>
             </div>
           </div>
-          <p class="color-light-gray margin-bottom-30">
+          <p class="color-light-grey margin-bottom-30">
             Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
             ipsum suspend isse ultrices gravida.
@@ -211,7 +251,7 @@
       </div>
     </div>
   </footer>
-  <div class="copyright-box color-gray flex justify-content-between">
+  <div class="copyright-box color-grey flex justify-content-between">
     <div>
       <p>
         Copyright © built by
@@ -227,4 +267,5 @@
     </div>
   </div>
   <script src="./contact.js" type="module"></script>
+  <script src="../shared.js" type="module"></script>
 </html>
