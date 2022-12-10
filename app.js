@@ -34,7 +34,7 @@ const changeBackgroundNews = () => {
   background.style.backgroundImage = `url("../assets/images/background-images/${i}.jpg")`;
   if (data) {
     newsHeader.innerHTML = data[i]?.title;
-    newsDate.innerHTML = data[i]?.publishedAt.substring(0, 10);
+    newsDate.innerHTML = data[i]?.published_at.substring(0, 10);
     newsAuthor.innerHTML = data[i]?.author ? "By " + data[i]?.author : "";
   }
   i++;

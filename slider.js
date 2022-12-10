@@ -23,7 +23,7 @@ export const initializeSlider = (newsData) => {
     });
 
     sliderDateTexts.forEach((box, i) => {
-      box.innerHTML = newsData[i]?.publishedAt.substring(0, 10);
+      box.innerHTML = newsData[i]?.published_at.substring(0, 10);
     });
 
     sliderHeaderTexts.forEach((box, i) => {

@@ -93,7 +93,7 @@ export const initializeLatestPosts = (latestData) => {
   );
   for (let i = 0; i < latestNewsImages.length; i++) {
     latestNewsImages[i].src = latestData[i]?.urlToImage;
-    latestNewsDates[i].innerHTML = latestData[i]?.publishedAt.substring(0, 10);
+    latestNewsDates[i].innerHTML = latestData[i]?.published_at.substring(0, 10);
     latestNewsTitles[i].innerHTML = truncateText(latestData[i]?.title, 60);
     if (latestNewsDescriptions[i]) {
       latestNewsDescriptions[i].innerHTML = truncateText(
