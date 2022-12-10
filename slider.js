@@ -27,7 +27,7 @@ export const initializeSlider = (newsData) => {
     });
 
     sliderHeaderTexts.forEach((box, i) => {
-      const text = truncateText(newsData[i]?.title, 60);
+      const text = truncateText(newsData[i]?.title, 40);
       box.innerHTML = text;
     });
   }

@@ -8,30 +8,26 @@ const badges = document.querySelectorAll(".top-news-box .badge");
 
 export const initializeTopNews = (data) => {
   if (data) {
-    newsImages.forEach((img, i) => {
-      img.src = data[i]?.urlToImage;
-    });
-    newsDates.forEach((date, i) => {
-      date.innerHTML = data[i]?.publishedAt.substring(0, 10);
-    });
-
-    newsTitles.forEach((title, i) => {
+    for (let i = 0; i < newsImages.length; i++) {
+      newsImages[i].src = data[i]?.urlToImage;
+      newsDates[i].innerHTML = data[i]?.publishedAt.substring(0, 10);
       const text = truncateText(data[i]?.title, 50);
-      title.innerHTML = text;
-    });
+      newsTitles[i].innerHTML = text;
+    }
   }
 };
 
+// top news categories
+
 const filterCategories = document.querySelectorAll(
-  ".container-2--categories li a"
+  ".container-top-news--categories li a"
 );
 
 export const clickStyleEffectOnCategory = () => {
-  console.log("here");
   filterCategories.forEach((cat, i) => {
     cat.addEventListener("click", () => {
       const chosenCategory = document.querySelector(
-        ".container-2--categories .active-red"
+        ".container-top-news--categories .active-red"
       );
       chosenCategory.classList.remove("active-red");
       cat.classList.add("active-red");
@@ -57,10 +53,10 @@ export const filterByCategories = async () => {
 // latest news
 
 const latestNewsLargeBox = document.querySelector(
-  ".container-4 .latest-news-main .latest-new"
+  ".container-latest-news .latest-news-main .latest-new"
 );
 const latestNewsMainContainer = document.querySelector(
-  ".container-4 .latest-news-container.main"
+  ".container-latest-news .latest-news-container.main"
 );
 
 export const initializeLatestPosts = (latestData) => {
@@ -70,10 +66,10 @@ export const initializeLatestPosts = (latestData) => {
   }
 
   const latestNewsSmallBox = document.querySelector(
-    ".container-4 .sidebar .latest-news-box "
+    ".container-latest-news .sidebar .latest-news-box "
   );
   const latestNewsSidebarContainer = document.querySelector(
-    ".container-4 .sidebar-posts"
+    ".container-latest-news .sidebar-posts"
   );
   for (let i = 0; i < 5; i++) {
     const clonedNode = latestNewsSmallBox.cloneNode(true);
@@ -81,19 +77,19 @@ export const initializeLatestPosts = (latestData) => {
   }
 
   const latestNewsImages = document.querySelectorAll(
-    ".container-4 .latest-news-container img:not(.logo-img)"
+    ".container-latest-news .latest-news-container img:not(.logo-img)"
   );
 
   const latestNewsDates = document.querySelectorAll(
-    ".container-4 .latest-news-container .news-date"
+    ".container-latest-news .latest-news-container .news-date"
   );
 
   const latestNewsTitles = document.querySelectorAll(
-    ".container-4 .latest-news-container .title"
+    ".container-latest-news .latest-news-container .title"
   );
 
   const latestNewsDescriptions = document.querySelectorAll(
-    ".container-4 .latest-news-container .description"
+    ".container-latest-news .latest-news-container .description"
   );
   for (let i = 0; i < latestNewsImages.length; i++) {
     latestNewsImages[i].src = latestData[i]?.urlToImage;

@@ -12,20 +12,19 @@ import {
   initializeLatestPosts,
 } from "./helper.js";
 
-// working with API
+// get data from api
 
-// const data = await getLatestPosts();
-// const topPosts = await getTopPosts();
-const data = {};
-const topPosts = {};
+const data = await getLatestPosts();
+const topPosts = await getTopPosts();
+// const data = {};
+// const topPosts = {};
 initializeTopNews(topPosts);
 filterByCategories();
 
-const background = document.querySelector(".background-news-wrapper");
+const background = document.querySelector(".background-cover");
 const newsHeader = document.querySelector(
   ".background-news-wrapper .news-title"
 );
-
 const newsDate = document.querySelector(".background-news-wrapper .news-date");
 const newsAuthor = document.querySelector(
   ".background-news-wrapper .news-author"
@@ -35,7 +34,6 @@ const changeBackgroundNews = () => {
   background.style.backgroundImage = `url("../assets/images/background-images/${i}.jpg")`;
   if (data) {
     newsHeader.innerHTML = data[i]?.title;
-    // newsCategory.innerHTML = data[i]?.category;
     newsDate.innerHTML = data[i]?.publishedAt.substring(0, 10);
     newsAuthor.innerHTML = data[i]?.author ? "By " + data[i]?.author : "";
   }
@@ -61,19 +59,5 @@ initializeSlider(data);
 moveSliderBoxes();
 
 // on click categories
-
 clickStyleEffectOnCategory();
-
 initializeLatestPosts(data);
-
-// const goToCategoryPage = (category) => {
-//   console.log(category);
-// };
-
-// const categoryLinks = document.querySelectorAll(".category-link");
-// categoryLinks.forEach((node) => {
-//   const category = node.innerHTML;
-//   node.addEventListener("click", goToCategoryPage(category));
-// });
-
-// console.log(categoryLinks);

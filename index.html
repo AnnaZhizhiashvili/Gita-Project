@@ -107,7 +107,8 @@
       </div>
     </div>
 
-    <section class="container container-1">
+    <section class="container container-background">
+      <div class="background-cover"></div>
       <div class="background-news-wrapper">
         <div
           class="background-news-wrapper-box flex gap-20 justify-content-between"
@@ -184,15 +185,15 @@
       </div>
     </div>
 
-    <section class="container container-2">
+    <section class="container container-top-news">
       <div
         class="flex font-bold align-items-center justify-content-between topbar"
       >
         <div class="text-with-line-wrapper">
-          <h4 class="font-size-30 topbar-header">Trending News</h4>
+          <h4 class="font-size-30 topbar-header">Top News</h4>
           <span class="line"></span>
         </div>
-        <ul class="container-2--categories font-size-14 flex gap-20">
+        <ul class="container-top-news--categories font-size-14 flex gap-20">
           <li class="active-red"><a>general</a></li>
           <li><a>business</a></li>
           <li><a>entertainment</a></li>
@@ -202,7 +203,9 @@
         </ul>
       </div>
     </section>
-    <section class="container container-3 flex justify-content-around">
+    <section
+      class="container container-top-section flex justify-content-between"
+    >
       <div class="top-news-box pointer">
         <div class="news-box-large--image border-radius">
           <img class="border-radius" alt="news image" />
@@ -276,18 +279,53 @@
       </div>
     </section>
 
-    <section class="container container-4 flex justify-content-between">
+    <!-- <section class="container container-trending-news">
+      <div class="background-cover"></div>
+      <div class="topbar">
+        <div class="text-with-line-wrapper">
+          <h4 class="font-size-30 topbar-header large">
+            What's Trending Today
+          </h4>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <div class="latest-new pointer">
+        <div class="img-wrapper">
+          <img alt="news image" />
+        </div>
+        <div class="latest-new--info flex flex-direction-column gap-10">
+          <div class="flex align-items-center gap-10">
+            <div class="badge badge-light">General</div>
+            <div class="flex gap-5 color-grey">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span class="news-date font-size-14"></span>
+            </div>
+          </div>
+          <div>
+            <h4 class="title font-size-20 line-height-25 margin-bottom-5"></h4>
+            <p class="description color-grey"></p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="container-top-news latest">
+      <div class="text-with-line-wrapper topbar">
+        <h4 class="font-size-30 topbar-header large color-black">
+          Latest News
+        </h4>
+        <span class="line"></span>
+      </div>
+    </section>
+    <section
+      class="container container-latest-news flex justify-content-between"
+    >
       <div class="latest-news-main">
         <div
           class="flex font-bold align-items-center justify-content-between topbar margin-bottom-30"
-        >
-          <div class="text-with-line-wrapper">
-            <h4 class="font-size-30 topbar-header large">Latest News</h4>
-            <span class="line"></span>
-          </div>
-        </div>
+        ></div>
         <div
-          class="latest-news-container main flex wrap justify-content-between align-items-center gap-35"
+          class="latest-news-container main flex wrap justify-content-start align-items-center gap-35"
         >
           <div class="latest-new pointer">
             <div class="img-wrapper">
@@ -357,7 +395,7 @@
       </div>
     </section>
 
-    <section class="container container-5 flex">
+    <section class="container container-social flex">
       <div class="box instagram flex justify-content-center align-items-center">
         <a href="https://www.instagram.com/" target="_blank">
           <i class="fab fa-instagram"></i>
@@ -398,7 +436,9 @@
               <span class="line"></span>
             </div>
           </div>
-          <div class="color-light-grey flex gap-35 justify-content-between">
+          <div
+            class="color-light-grey flex gap-35 justify-content-between margin-bottom-20"
+          >
             <ul class="sub-categories">
               <li><a>general</a></li>
               <li><a>business</a></li>
@@ -411,6 +451,36 @@
               <li><a>sports</a></li>
               <li><a>technology</a></li>
             </ul>
+          </div>
+          <div class="social-feed flex justify-content-start color-white">
+            <div
+              class="box instagram flex justify-content-center align-items-center"
+            >
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div
+              class="box facebook flex justify-content-center align-items-center"
+            >
+              <a href="https://www.facebook.com/">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+            <div
+              class="box twitter flex justify-content-center align-items-center"
+            >
+              <a href="https://twitter.com/" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            <div
+              class="box pinterest flex justify-content-center align-items-center"
+            >
+              <a href="https://www.pinterest.com/" target="_blank">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </div>
           </div>
         </div>
         <div class="footer-box">
