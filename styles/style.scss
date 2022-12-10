@@ -114,7 +114,7 @@ header {
     left: -100%;
     transition: 0.3s all ease-in-out;
     padding: 17px;
-    z-index: 1;
+    z-index: 10;
     &.active {
       left: 0;
     }
