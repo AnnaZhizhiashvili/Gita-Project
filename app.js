@@ -33,7 +33,7 @@ const newsAuthor = document.querySelector(
 );
 let i = 0;
 const changeBackgroundNews = () => {
-  background.style.backgroundImage = `url("../assets/images/background-images/${i}.jpg")`;
+  background.style.backgroundImage = `url("../assets/images/background-images/image-${i}.jpg")`;
   if (data) {
     newsHeader.innerHTML = data[i]?.title;
     newsDate.innerHTML = data[i]?.published_at.substring(0, 10);
