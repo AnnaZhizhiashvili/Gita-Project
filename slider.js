@@ -19,7 +19,7 @@ export const truncateText = (str, limit) => {
 export const initializeSlider = (newsData) => {
   if (newsData) {
     sliderImgBoxes.forEach((box, i) => {
-      box.style.backgroundImage = `url('../assets/images/background-images/image-${i}.jpg`;
+      box.style.backgroundImage = `url('./assets/images/background-images/image-${i}.jpg`;
     });
 
     sliderDateTexts.forEach((box, i) => {
