@@ -9,8 +9,8 @@ const badges = document.querySelectorAll(".top-news-box .badge");
 export const initializeTopNews = (data) => {
   if (data) {
     for (let i = 0; i < newsImages.length; i++) {
-      newsImages[i].src = data[i]?.urlToImage;
-      newsDates[i].innerHTML = data[i]?.publishedAt.substring(0, 10);
+      newsImages[i].src = data[i]?.image_url;
+      newsDates[i].innerHTML = data[i]?.published_at?.substring(0, 10);
       const text = truncateText(data[i]?.title, 50);
       newsTitles[i].innerHTML = text;
     }
@@ -92,8 +92,11 @@ export const initializeLatestPosts = (latestData) => {
     ".container-latest-news .latest-news-container .description"
   );
   for (let i = 0; i < latestNewsImages.length; i++) {
-    latestNewsImages[i].src = latestData[i]?.urlToImage;
-    latestNewsDates[i].innerHTML = latestData[i]?.published_at.substring(0, 10);
+    latestNewsImages[i].src = latestData[i]?.image_url;
+    latestNewsDates[i].innerHTML = latestData[i]?.published_at?.substring(
+      0,
+      10
+    );
     latestNewsTitles[i].innerHTML = truncateText(latestData[i]?.title, 60);
     if (latestNewsDescriptions[i]) {
       latestNewsDescriptions[i].innerHTML = truncateText(
