@@ -53,18 +53,18 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  .container-top-section {
+  .top-news-box-wrapper {
     flex-direction: column;
   }
-  .container-top-section .news-box-small--info {
+  .top-news-box-wrapper .news-box-small--info {
     justify-content: center;
     white-space: nowrap;
   }
-  .container-top-section .top-news-box {
+  .top-news-box-wrapper .top-news-box {
     width: 86%;
     margin: 0 auto;
   }
-  .container-top-section .top-news-box:first-child {
+  .top-news-box-wrapper .top-news-box:first-child {
     min-height: 400px;
     margin-bottom: 40px;
   }

@@ -58,7 +58,7 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  .container-top-section {
+  .top-news-box-wrapper {
     flex-direction: column;
     .news-box-small--info {
       justify-content: center;
@@ -125,9 +125,6 @@
     }
   }
 
-  .container-latest-news .latest-news-container.main .latest-new {
-    // flex-basis: 46%;
-  }
   .container-top-section {
     padding: 0px 15px;
     .news-box-small--info {

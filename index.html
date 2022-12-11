@@ -30,521 +30,504 @@
     <link href="./styles/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div
-        class="header-container flex justify-content-between align-items-center"
-      >
-        <div class="logo flex align-items-center">
-          <img src="./assets/logo.svg" alt="logo" />
-          <span>Annazine</span>
-        </div>
-        <div class="flex flex-default gap-20">
-          <nav class="navbar large-res font-bold font-size-16">
-            <ul class="flex gap-20">
-              <li><a href="#" class="active-red">Home</a></li>
-              <li class="categories">
-                <a>Categories</a>
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                <ul class="sub-categories">
-                  <li><a>general</a></li>
-                  <li><a>business</a></li>
-                  <li><a>entertainment</a></li>
-                  <li><a>science</a></li>
-                  <li><a>sports</a></li>
-                  <li><a>technology</a></li>
-                </ul>
-              </li>
-              <li><a href="./pages/about.html">About Us</a></li>
-              <li><a href="./pages/contact.html">Contact</a></li>
-            </ul>
-          </nav>
-
-          <button class="btn gradient color-white font-size-14">
-            <span class="text">subscribe</span>
-          </button>
-          <div class="icons-container">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-regular fa-user"></i>
-          </div>
-          <div class="hamburger pointer">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="navbar small-res">
-      <nav>
-        <div class="logo flex align-items-center margin-bottom-20">
-          <img src="./assets/logo.svg" alt="logo" />
-          <span>Annazine</span>
-        </div>
-        <ul class="flex flex-direction-column gap-20">
-          <li><a href="#">Home</a></li>
-          <li><a>general</a></li>
-          <li><a>business</a></li>
-          <li><a>entertainment</a></li>
-          <li><a>science</a></li>
-          <li><a>sports</a></li>
-          <li><a>technology</a></li>
-          <li><a href="./pages/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="contact-container margin-top-20">
-        <div>
-          <i class="fa fa-phone filter-colorful"></i>
-          <span>+995 559 96 54 25</span>
-        </div>
-        <div>
-          <i class="fa fa-home filter-colorful"></i>
-          <span>Angle Bd Abdelmoumen & rue soumaya, Résidence</span>
-        </div>
-        <div>
-          <i class="fa fa-envelope filter-colorful"></i>
-          <span>Anna@gmail.con</span>
-        </div>
-      </div>
-    </div>
-
-    <section class="container container-background">
-      <div class="background-cover"></div>
-      <div class="background-news-wrapper">
+    <div class="loader"></div>
+    <div id="main">
+      <header>
         <div
-          class="background-news-wrapper-box flex gap-20 justify-content-between"
+          class="header-container flex justify-content-between align-items-center"
         >
+          <div class="logo flex align-items-center">
+            <img src="./assets/logo.svg" alt="logo" />
+            <span>Annazine</span>
+          </div>
+          <div class="flex flex-default gap-20">
+            <nav class="navbar large-res font-bold font-size-16">
+              <ul class="flex gap-20">
+                <li><a href="#" class="active-red">Home</a></li>
+                <li class="categories">
+                  <a>Categories</a>
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  <ul class="sub-categories">
+                    <li><a>general</a></li>
+                    <li><a>business</a></li>
+                    <li><a>entertainment</a></li>
+                    <li><a>science</a></li>
+                    <li><a>sports</a></li>
+                    <li><a>Politics </a></li>
+                  </ul>
+                </li>
+                <li><a href="./pages/about.html">About Us</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+              </ul>
+            </nav>
+
+            <button class="btn gradient color-white font-size-14">
+              <span class="text">subscribe</span>
+            </button>
+            <div class="icons-container">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="hamburger pointer">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="navbar small-res">
+        <nav>
+          <div class="logo flex align-items-center margin-bottom-20">
+            <img src="./assets/logo.svg" alt="logo" />
+            <span>Annazine</span>
+          </div>
+          <ul class="flex flex-direction-column gap-20">
+            <li><a href="#">Home</a></li>
+            <li><a>general</a></li>
+            <li><a>business</a></li>
+            <li><a>entertainment</a></li>
+            <li><a>science</a></li>
+            <li><a>sports</a></li>
+            <li><a>Politics </a></li>
+            <li><a href="./pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="contact-container margin-top-20">
+          <div>
+            <i class="fa fa-phone filter-colorful"></i>
+            <span>+995 559 96 54 25</span>
+          </div>
+          <div>
+            <i class="fa fa-home filter-colorful"></i>
+            <span>Angle Bd Abdelmoumen & rue soumaya, Résidence</span>
+          </div>
+          <div>
+            <i class="fa fa-envelope filter-colorful"></i>
+            <span>Anna@gmail.con</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="container container-background">
+        <div class="background-cover"></div>
+        <div class="background-news-wrapper">
           <div
-            class="news-container color-white flex flex-direction-column gap-20"
+            class="background-news-wrapper-box flex gap-20 justify-content-between"
           >
-            <div class="flex align-items-center gap-20">
-              <div>
+            <div
+              class="news-container color-white flex flex-direction-column gap-20"
+            >
+              <div class="flex align-items-center gap-20">
+                <div>
+                  <span class="news-category badge color-white font-size-14"
+                    >General</span
+                  >
+                </div>
+                <div>
+                  <i class="fa-solid fa-calendar-days color-white"></i>
+                  <span class="news-date font-size-16"></span>
+                </div>
+              </div>
+              <h2 class="news-title"></h2>
+              <span class="news-author"></span>
+            </div>
+            <div class="weather-container color-white font-size-21">
+              <div class="margin-bottom-5">
+                <span>Georgia, Tbilisi</span>
+              </div>
+              <div class="flex gap-10">
+                <i class="fa-solid fa-cloud color-white"></i>
+                <span class="temperature-wrapper"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="visible-box">
+        <div class="slider-box flex gap-20 pointer">
+          <div class="slider-box--img"></div>
+          <div class="slider-box--text flex flex-direction-column gap-10">
+            <div class="slider-box---date">
+              <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
+              <span class="news-date font-size-16"></span>
+            </div>
+            <p class="slider-box--text-title font-size-20"></p>
+          </div>
+        </div>
+        <div class="slider-box flex gap-20">
+          <div class="slider-box--img"></div>
+          <div class="slider-box--text flex flex-direction-column gap-10">
+            <div class="slider-box---date">
+              <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
+              <span class="news-date font-size-16"></span>
+            </div>
+            <p class="slider-box--text-title font-size-20"></p>
+          </div>
+        </div>
+        <div class="slider-box flex gap-20 pointer">
+          <div class="slider-box--img"></div>
+          <div class="slider-box--text flex flex-direction-column gap-10">
+            <div class="slider-box---date">
+              <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
+              <span class="news-date font-size-16"></span>
+            </div>
+            <p class="slider-box--text-title font-size-20"></p>
+          </div>
+        </div>
+        <div class="slider-box flex gap-20 pointer">
+          <div class="slider-box--img"></div>
+          <div class="slider-box--text flex flex-direction-column gap-10">
+            <div class="slider-box---date">
+              <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
+              <span class="news-date font-size-16"></span>
+            </div>
+            <p class="slider-box--text-title font-size-20"></p>
+          </div>
+        </div>
+      </div>
+      <section class="container container-top-news">
+        <div
+          class="flex font-bold align-items-center justify-content-between topbar"
+        >
+          <div class="text-with-line-wrapper">
+            <h4 class="font-size-30 topbar-header">Top News</h4>
+            <span class="line"></span>
+          </div>
+          <ul class="container-top-news--categories font-size-14 flex gap-20">
+            <li class="active-red"><a>general</a></li>
+            <li><a>business</a></li>
+            <li><a>entertainment</a></li>
+            <li><a>science</a></li>
+            <li><a>sports</a></li>
+            <li><a>Politics </a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="container container-top-section">
+        <div class="loader loader-categories"></div>
+        <div class="top-news-box-wrapper flex justify-content-between">
+          <div class="top-news-box pointer">
+            <div class="news-box-large--image border-radius">
+              <img class="border-radius" alt="news image" />
+            </div>
+            <div class="news-box-large--info color-white">
+              <div class="flex gap-20 margin-bottom-20">
                 <span class="news-category badge color-white font-size-14"
                   >General</span
                 >
-              </div>
-              <div>
-                <i class="fa-solid fa-calendar-days color-white"></i>
-                <span class="news-date font-size-16"></span>
-              </div>
-            </div>
-            <h2 class="news-title"></h2>
-            <span class="news-author"></span>
-          </div>
-          <div class="weather-container color-white font-size-21">
-            <div class="margin-bottom-5">
-              <span>Georgia, Tbilisi</span>
-            </div>
-            <div class="flex gap-10">
-              <i class="fa-solid fa-cloud color-white"></i>
-              <span class="temperature-wrapper"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="visible-box">
-      <div class="slider-box flex gap-20 pointer">
-        <div class="slider-box--img"></div>
-        <div class="slider-box--text flex flex-direction-column gap-10">
-          <div class="slider-box---date">
-            <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
-            <span class="news-date font-size-16"></span>
-          </div>
-          <p class="slider-box--text-title font-size-20"></p>
-        </div>
-      </div>
-      <div class="slider-box flex gap-20">
-        <div class="slider-box--img"></div>
-        <div class="slider-box--text flex flex-direction-column gap-10">
-          <div class="slider-box---date">
-            <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
-            <span class="news-date font-size-16"></span>
-          </div>
-          <p class="slider-box--text-title font-size-20"></p>
-        </div>
-      </div>
-      <div class="slider-box flex gap-20">
-        <div class="slider-box--img"></div>
-        <div class="slider-box--text flex flex-direction-column gap-10">
-          <div class="slider-box---date">
-            <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
-            <span class="news-date font-size-16"></span>
-          </div>
-          <p class="slider-box--text-title font-size-20"></p>
-        </div>
-      </div>
-      <div class="slider-box flex gap-20">
-        <div class="slider-box--img"></div>
-        <div class="slider-box--text flex flex-direction-column gap-10">
-          <div class="slider-box---date">
-            <i class="fa-solid fa-calendar-days color-white font-size-21"></i>
-            <span class="news-date font-size-16"></span>
-          </div>
-          <p class="slider-box--text-title font-size-20"></p>
-        </div>
-      </div>
-    </div>
-
-    <section class="container container-top-news">
-      <div
-        class="flex font-bold align-items-center justify-content-between topbar"
-      >
-        <div class="text-with-line-wrapper">
-          <h4 class="font-size-30 topbar-header">Top News</h4>
-          <span class="line"></span>
-        </div>
-        <ul class="container-top-news--categories font-size-14 flex gap-20">
-          <li class="active-red"><a>general</a></li>
-          <li><a>business</a></li>
-          <li><a>entertainment</a></li>
-          <li><a>science</a></li>
-          <li><a>sports</a></li>
-          <li><a>technology</a></li>
-        </ul>
-      </div>
-    </section>
-    <section
-      class="container container-top-section flex justify-content-between"
-    >
-      <div class="top-news-box pointer">
-        <div class="news-box-large--image border-radius">
-          <img class="border-radius" alt="news image" />
-        </div>
-        <div class="news-box-large--info color-white">
-          <div class="flex gap-20 margin-bottom-20">
-            <span class="news-category badge color-white font-size-14"
-              >General</span
-            >
-            <div class="date-container">
-              <i class="fa-solid fa-calendar-days font-size-21 color-white"></i>
-              <span class="news-date font-size-16 font-bold"></span>
-            </div>
-          </div>
-          <h5 class="font-size-21"></h5>
-        </div>
-      </div>
-      <div class="top-news-box pointer flex flex-direction-column gap-20">
-        <div class="flex gap-20 small-news-wrapper">
-          <div class="news-box-small--image">
-            <img class="border-radius" alt="news image" />
-          </div>
-          <div class="news-box-small--info">
-            <div>
-              <span class="news-category badge badge-light font-size-14"
-                >General</span
-              >
-              <div class="date-container color-grey">
-                <i class="fa-solid fa-calendar-days font-size-21"></i>
-                <span class="news-date font-size-16"></span>
-              </div>
-            </div>
-            <h5 class="font-size-16 font-bold"></h5>
-          </div>
-        </div>
-
-        <div class="flex gap-20 small-news-wrapper">
-          <div class="news-box-small--image">
-            <img class="border-radius" alt="news image" />
-          </div>
-          <div class="news-box-small--info">
-            <div>
-              <span class="news-category badge badge-light font-size-14"
-                >General</span
-              >
-              <div class="date-container color-grey">
-                <i class="fa-solid fa-calendar-days font-size-21"></i>
-                <span class="news-date font-size-16"></span>
-              </div>
-            </div>
-            <h5 class="font-size-16 font-bold"></h5>
-          </div>
-        </div>
-        <div class="flex gap-20 small-news-wrapper">
-          <div class="news-box-small--image">
-            <img class="border-radius" alt="news image" />
-          </div>
-          <div class="news-box-small--info">
-            <div>
-              <span class="news-category badge badge-light font-size-14"
-                >General</span
-              >
-              <div class="date-container">
-                <i class="fa-solid fa-calendar-days font-size-21"></i>
-                <span class="news-date font-size-16"></span>
-              </div>
-            </div>
-            <h5 class="font-size-16 font-bold"></h5>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="container container-trending-news">
-      <div class="background-cover"></div>
-      <div class="topbar">
-        <div class="text-with-line-wrapper">
-          <h4 class="font-size-30 topbar-header large">
-            What's Trending Today
-          </h4>
-          <span class="line"></span>
-        </div>
-      </div>
-
-      <div class="latest-new pointer">
-        <div class="img-wrapper">
-          <img alt="news image" />
-        </div>
-        <div class="latest-new--info flex flex-direction-column gap-10">
-          <div class="flex align-items-center gap-10">
-            <div class="badge badge-light">General</div>
-            <div class="flex gap-5 color-grey">
-              <i class="fa-solid fa-calendar-days"></i>
-              <span class="news-date font-size-14"></span>
-            </div>
-          </div>
-          <div>
-            <h4 class="title font-size-20 line-height-25 margin-bottom-5"></h4>
-            <p class="description color-grey"></p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <section class="container-top-news latest">
-      <div class="text-with-line-wrapper topbar">
-        <h4 class="font-size-30 topbar-header large color-black">
-          Latest News
-        </h4>
-        <span class="line"></span>
-      </div>
-    </section>
-    <section
-      class="container container-latest-news flex justify-content-between"
-    >
-      <div class="latest-news-main">
-        <div
-          class="flex font-bold align-items-center justify-content-between topbar margin-bottom-30"
-        ></div>
-        <div
-          class="latest-news-container main flex wrap justify-content-start align-items-center gap-35"
-        >
-          <div class="latest-new pointer">
-            <div class="img-wrapper">
-              <img alt="news image" />
-            </div>
-            <div class="latest-new--info flex flex-direction-column gap-10">
-              <div class="flex align-items-center gap-10">
-                <div class="badge badge-light">Latest</div>
-                <div class="flex gap-5 color-grey">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  <span class="news-date font-size-14"></span>
+                <div class="date-container">
+                  <i
+                    class="fa-solid fa-calendar-days font-size-21 color-white"
+                  ></i>
+                  <span class="news-date font-size-16 font-bold"></span>
                 </div>
               </div>
-              <div>
-                <h4
-                  class="title font-size-20 line-height-25 margin-bottom-5"
-                ></h4>
-                <p class="description color-grey"></p>
-              </div>
+              <h5 class="font-size-21"></h5>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div
-        class="latest-news-container sidebar flex justify-content-between flex-direction-column"
-      >
-        <div class="sidebar-title">
-          <div>
-            <h4 class="badge badge-light">Latest Post</h4>
-          </div>
-        </div>
-        <div class="sidebar-posts margin-top-20 pointer">
-          <div class="latest-news-box flex flex-direction-column gap-20">
-            <div class="flex gap-5 small-news-wrapper latest-new">
+          <div class="top-news-box pointer flex flex-direction-column gap-20">
+            <div class="flex gap-20 small-news-wrapper">
               <div class="news-box-small--image">
                 <img class="border-radius" alt="news image" />
               </div>
-              <div class="news-box-small--info font-size-14 gap-5">
+              <div class="news-box-small--info">
                 <div>
+                  <span class="news-category badge badge-light font-size-14"
+                    >General</span
+                  >
                   <div class="date-container color-grey">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <span class="news-date"></span>
+                    <i class="fa-solid fa-calendar-days font-size-21"></i>
+                    <span class="news-date font-size-16"></span>
                   </div>
                 </div>
-                <h5 class="font-bold title"></h5>
+                <h5 class="font-size-16 font-bold"></h5>
+              </div>
+            </div>
+
+            <div class="flex gap-20 small-news-wrapper">
+              <div class="news-box-small--image">
+                <img class="border-radius" alt="news image" />
+              </div>
+              <div class="news-box-small--info">
+                <div>
+                  <span class="news-category badge badge-light font-size-14"
+                    >General</span
+                  >
+                  <div class="date-container color-grey">
+                    <i class="fa-solid fa-calendar-days font-size-21"></i>
+                    <span class="news-date font-size-16"></span>
+                  </div>
+                </div>
+                <h5 class="font-size-16 font-bold"></h5>
+              </div>
+            </div>
+            <div class="flex gap-20 small-news-wrapper">
+              <div class="news-box-small--image">
+                <img class="border-radius" alt="news image" />
+              </div>
+              <div class="news-box-small--info">
+                <div>
+                  <span class="news-category badge badge-light font-size-14"
+                    >General</span
+                  >
+                  <div class="date-container">
+                    <i class="fa-solid fa-calendar-days font-size-21"></i>
+                    <span class="news-date font-size-16"></span>
+                  </div>
+                </div>
+                <h5 class="font-size-16 font-bold"></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-top-news latest">
+        <div class="text-with-line-wrapper topbar">
+          <h4 class="font-size-30 topbar-header large color-black">
+            Latest News
+          </h4>
+          <span class="line"></span>
+        </div>
+      </section>
+      <section
+        class="container container-latest-news flex justify-content-between"
+      >
+        <div class="latest-news-main">
+          <div
+            class="flex font-bold align-items-center justify-content-between topbar margin-bottom-30"
+          ></div>
+          <div
+            class="latest-news-container main flex wrap justify-content-start align-items-center gap-35"
+          >
+            <div class="latest-new pointer">
+              <div class="img-wrapper">
+                <img alt="news image" />
+              </div>
+              <div class="latest-new--info flex flex-direction-column gap-10">
+                <div class="flex align-items-center gap-10">
+                  <div class="badge badge-light">Latest</div>
+                  <div class="flex gap-5 color-grey">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span class="news-date font-size-14"></span>
+                  </div>
+                </div>
+                <div>
+                  <h4
+                    class="title font-size-20 line-height-25 margin-bottom-5"
+                  ></h4>
+                  <p class="description color-grey"></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="sidebar-poster">
-          <div class="poster-logo logo flex align-items-center">
-            <img src="./assets/logo.svg" alt="logo" class="logo-img" />
-            <span class="color-white">Annazine</span>
-          </div>
-          <div class="poster-info margin margin-bottom-20 margin-top-20">
-            Built with amazing platform & framwork. You can use anyway in blog,
-            news & magazine.
-          </div>
-          <div class="poster-ad">
-            <button class="btn btn-default color-white font-size-14">
-              <span class="text">purchase</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container container-social flex">
-      <div class="box instagram flex justify-content-center align-items-center">
-        <a href="https://www.instagram.com/" target="_blank">
-          <i class="fab fa-instagram"></i>
-          <span> Instagram <span>Feeds</span></span>
-        </a>
-      </div>
-      <div class="box facebook flex justify-content-center align-items-center">
-        <a>
-          <i class="fab fa-facebook-f"></i>
-          <span>Facebook <span>Share</span></span>
-        </a>
-      </div>
-      <div class="box twitter flex justify-content-center align-items-center">
-        <a href="https://twitter.com/" target="_blank">
-          <i class="fab fa-twitter"></i>
-          <span>Twitter <span>Feeds</span></span>
-        </a>
-      </div>
-      <div class="box pinterest flex justify-content-center align-items-center">
-        <a href="https://www.pinterest.com/" target="_blank">
-          <i class="fab fa-pinterest-p"></i>
-          <span>Pinterest <span>Share</span></span>
-        </a>
-      </div>
-      <div class="box dribble flex justify-content-center align-items-center">
-        <a href="https://dribbble.com/" target="_blank">
-          <i class="fab fa-dribbble"></i>
-          <span>Dribbble <span>Share</span></span></a
+        <div
+          class="latest-news-container sidebar flex justify-content-between flex-direction-column"
         >
-      </div>
-    </section>
-    <footer class="color-white">
-      <div class="flex footer-main-container justify-content-between gap-35">
-        <div class="footer-box">
-          <div class="margin-bottom-30">
-            <div class="margin-bottom-30 text-with-line-wrapper">
-              <h4 class="topbar-header">Categories</h4>
-              <span class="line"></span>
-            </div>
-          </div>
-          <div
-            class="color-light-grey flex gap-35 justify-content-between margin-bottom-20 footer-categories"
-          >
-            <ul class="sub-categories">
-              <li><a>general</a></li>
-              <li><a>business</a></li>
-            </ul>
-            <ul class="sub-categories">
-              <li><a>entertainment</a></li>
-              <li><a>science</a></li>
-            </ul>
-            <ul class="sub-categories">
-              <li><a>sports</a></li>
-              <li><a>technology</a></li>
-            </ul>
-          </div>
-          <div class="social-feed flex justify-content-start color-white">
-            <div
-              class="box instagram flex justify-content-center align-items-center"
-            >
-              <a href="https://www.instagram.com/" target="_blank">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-            <div
-              class="box facebook flex justify-content-center align-items-center"
-            >
-              <a href="https://www.facebook.com/">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </div>
-            <div
-              class="box twitter flex justify-content-center align-items-center"
-            >
-              <a href="https://twitter.com/" target="_blank">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </div>
-            <div
-              class="box pinterest flex justify-content-center align-items-center"
-            >
-              <a href="https://www.pinterest.com/" target="_blank">
-                <i class="fab fa-pinterest-p"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-box">
-          <div>
-            <div class="margin-bottom-30 text-with-line-wrapper">
-              <h4 class="topbar-header">Newsletter</h4>
-              <span class="line"></span>
-            </div>
+          <div class="sidebar-title">
             <div>
-              <form action="#">
-                <div class="input-wrapper margin-bottom-20">
-                  <i class="fa-regular fa-user"></i>
-                  <input type="text" placeholder="Enter your name" />
+              <h4 class="badge badge-light">Latest Post</h4>
+            </div>
+          </div>
+          <div class="sidebar-posts margin-top-20 pointer">
+            <div class="latest-news-box flex flex-direction-column gap-20">
+              <div class="flex gap-5 small-news-wrapper latest-new">
+                <div class="news-box-small--image">
+                  <img class="border-radius" alt="news image" />
                 </div>
-                <div class="input-wrapper margin-bottom-20">
-                  <i class="fa-regular fa-envelope"></i>
-                  <input type="email" placeholder="Enter your email address" />
+                <div class="news-box-small--info font-size-14 gap-5">
+                  <div>
+                    <div class="date-container color-grey">
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <span class="news-date"></span>
+                    </div>
+                  </div>
+                  <h5 class="font-bold title"></h5>
                 </div>
-                <div>
-                  <button class="btn btn-default">
-                    <i class="fa-regular fa-paper-plane color-white"></i>
-                    Subscribe Now
-                  </button>
-                </div>
-              </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-poster">
+            <div class="poster-logo logo flex align-items-center">
+              <img src="./assets/logo.svg" alt="logo" class="logo-img" />
+              <span class="color-white">Annazine</span>
+            </div>
+            <div class="poster-info margin margin-bottom-20 margin-top-20">
+              Built with amazing platform & framwork. You can use anyway in
+              blog, news & magazine.
+            </div>
+            <div class="poster-ad">
+              <button class="btn btn-default color-white font-size-14">
+                <span class="text">purchase</span>
+              </button>
             </div>
           </div>
         </div>
-        <div class="footer-box">
-          <div>
+      </section>
+
+      <section class="container container-social flex">
+        <div
+          class="box instagram flex justify-content-center align-items-center"
+        >
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram"></i>
+            <span> Instagram <span>Feeds</span></span>
+          </a>
+        </div>
+        <div
+          class="box facebook flex justify-content-center align-items-center"
+        >
+          <a>
+            <i class="fab fa-facebook-f"></i>
+            <span>Facebook <span>Share</span></span>
+          </a>
+        </div>
+        <div class="box twitter flex justify-content-center align-items-center">
+          <a href="https://twitter.com/" target="_blank">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter <span>Feeds</span></span>
+          </a>
+        </div>
+        <div
+          class="box pinterest flex justify-content-center align-items-center"
+        >
+          <a href="https://www.pinterest.com/" target="_blank">
+            <i class="fab fa-pinterest-p"></i>
+            <span>Pinterest <span>Share</span></span>
+          </a>
+        </div>
+        <div class="box dribble flex justify-content-center align-items-center">
+          <a href="https://dribbble.com/" target="_blank">
+            <i class="fab fa-dribbble"></i>
+            <span>Dribbble <span>Share</span></span></a
+          >
+        </div>
+      </section>
+      <footer class="color-white">
+        <div class="flex footer-main-container justify-content-between gap-35">
+          <div class="footer-box">
             <div class="margin-bottom-30">
-              <div class="text-with-line-wrapper">
-                <h4>About us</h4>
+              <div class="margin-bottom-30 text-with-line-wrapper">
+                <h4 class="topbar-header">Categories</h4>
                 <span class="line"></span>
               </div>
             </div>
-            <p class="color-light-grey margin-bottom-30">
-              Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspend isse ultrices gravida.
-            </p>
+            <div
+              class="color-light-grey flex gap-35 justify-content-between margin-bottom-20 footer-categories"
+            >
+              <ul class="sub-categories">
+                <li><a>general</a></li>
+                <li><a>business</a></li>
+              </ul>
+              <ul class="sub-categories">
+                <li><a>entertainment</a></li>
+                <li><a>science</a></li>
+              </ul>
+              <ul class="sub-categories">
+                <li><a>sports</a></li>
+                <li><a>Politics </a></li>
+              </ul>
+            </div>
+            <div class="social-feed flex justify-content-start color-white">
+              <div
+                class="box instagram flex justify-content-center align-items-center"
+              >
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+              <div
+                class="box facebook flex justify-content-center align-items-center"
+              >
+                <a href="https://www.facebook.com/">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </div>
+              <div
+                class="box twitter flex justify-content-center align-items-center"
+              >
+                <a href="https://twitter.com/" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+              <div
+                class="box pinterest flex justify-content-center align-items-center"
+              >
+                <a href="https://www.pinterest.com/" target="_blank">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+              </div>
+            </div>
           </div>
-          <div>
-            <div class="logo flex align-items-center">
-              <img src="./assets/logo.svg" alt="logo" />
-              <span>Annazine</span>
+          <div class="footer-box">
+            <div>
+              <div class="margin-bottom-30 text-with-line-wrapper">
+                <h4 class="topbar-header">Newsletter</h4>
+                <span class="line"></span>
+              </div>
+              <div>
+                <form action="#">
+                  <div class="input-wrapper margin-bottom-20">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" placeholder="Enter your name" />
+                  </div>
+                  <div class="input-wrapper margin-bottom-20">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input
+                      type="email"
+                      placeholder="Enter your email address"
+                    />
+                  </div>
+                  <div>
+                    <button class="btn btn-default">
+                      <i class="fa-regular fa-paper-plane color-white"></i>
+                      Subscribe Now
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="footer-box">
+            <div>
+              <div class="margin-bottom-30">
+                <div class="text-with-line-wrapper">
+                  <h4>About us</h4>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <p class="color-light-grey margin-bottom-30">
+                Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspend isse ultrices gravida.
+              </p>
+            </div>
+            <div>
+              <div class="logo flex align-items-center">
+                <img src="./assets/logo.svg" alt="logo" />
+                <span>Annazine</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <div class="copyright-box color-grey flex justify-content-between">
-      <div>
-        <p>
-          Copyright © built by
-          <span class="color-white">Ana Zhizhiashvili</span> - 2022
-        </p>
-      </div>
-      <div>
-        <ul class="flex gap-20">
-          <li><a>Privacy & Policy</a></li>
-          <li><a>Claim A Report</a></li>
-          <li><a>Careers</a></li>
-        </ul>
+      </footer>
+      <div class="copyright-box color-grey flex justify-content-between">
+        <div>
+          <p>
+            Copyright © built by
+            <span class="color-white">Ana Zhizhiashvili</span> - 2022
+          </p>
+        </div>
+        <div>
+          <ul class="flex gap-20">
+            <li><a>Privacy & Policy</a></li>
+            <li><a>Claim A Report</a></li>
+            <li><a>Careers</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>

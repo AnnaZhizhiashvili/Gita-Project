@@ -34,14 +34,19 @@ export const clickStyleEffectOnCategory = () => {
     });
   });
 };
-
+const topNewsSection = document.querySelector(".container-top-section");
+const topNewsBoxes = document.querySelectorAll(".top-news-box");
 export const filterByCategories = async () => {
   let filteredData;
   let category;
   filterCategories.forEach((cat) => {
     cat.addEventListener("click", async () => {
       category = cat.innerHTML.toLowerCase();
-      filteredData = await getByCategory(category, 4);
+      topNewsBoxes.forEach((box) => (box.style.display = "none"));
+      document.querySelector(".loader-categories").style.display = "block";
+      filteredData = await getByCategory(category);
+      topNewsBoxes.forEach((box) => (box.style.display = "block"));
+      document.querySelector(".loader-categories").style.display = "none";
       initializeTopNews(filteredData);
       badges.forEach((badge) => {
         badge.innerHTML = category;

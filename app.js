@@ -2,7 +2,7 @@ import {
   getLatestPosts,
   getWeather,
   getTopPosts,
-  getByCategory,
+  // getByCategory,
 } from "./server.js";
 import { moveSliderBoxes, initializeSlider, truncateText } from "./slider.js";
 import {
@@ -20,6 +20,8 @@ const topPosts = await getTopPosts();
 // const topPosts = {};
 initializeTopNews(topPosts);
 filterByCategories();
+document.getElementById("main").style.display = "block";
+document.querySelector(".loader").style.display = "none";
 
 const background = document.querySelector(".background-cover");
 const newsHeader = document.querySelector(
@@ -60,4 +62,8 @@ moveSliderBoxes();
 
 // on click categories
 clickStyleEffectOnCategory();
-initializeLatestPosts(data);
+
+// free trial of this fake api only lets me use 5 articles pre request, that's why I'm spreading my data
+
+const increasedData = [...data, ...data, ...data];
+initializeLatestPosts(increasedData);

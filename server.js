@@ -1,9 +1,9 @@
-const apiKey = "89a29fe6830e4576b6d3ebcc66a944cf";
-const ROOT_URL = `https://newsapi.org/v2`;
+const apiKey = "rN3BY9QDbOjaXF8CjZS0iRgKj2dXCXCAErrdNgzD";
+const ROOT_URL = `https://api.thenewsapi.com/v1/news`;
 const urls = {
-  latest_posts: `https://api.thenewsapi.com/v1/news/all?api_token=qEDzOfRT1Hx82oI5f4cUy6FWonURUKpJ1g4bsQvW`,
-  top_posts: ` https://api.thenewsapi.com/v1/news/top?api_token=qEDzOfRT1Hx82oI5f4cUy6FWonURUKpJ1g4bsQvW`,
-  category: `${ROOT_URL}/top-headlines?q=all&language=en&category=:category&pageSize=:limit&apiKey=${apiKey}`,
+  latest_posts: `${ROOT_URL}/all?api_token=${apiKey}&language=en`,
+  top_posts: `${ROOT_URL}/top?api_token=${apiKey}&language=en`,
+  category: `${ROOT_URL}/all?api_token=${apiKey}&language=en&category=:category`,
   weatherInTbilisi:
     "https://api.open-meteo.com/v1/forecast?latitude=41.69&longitude=44.83&hourly=temperature_2m",
 };
@@ -18,11 +18,10 @@ export const getTopPosts = async () => {
   return resJson.data;
 };
 
-export const getByCategory = async (category, limit) => {
+export const getByCategory = async (category) => {
   let url = urls.category.replace(":category", category);
-  url = url.replace(":limit", limit);
   let resJson = await fetchData(url);
-  return resJson.articles;
+  return resJson.data;
 };
 
 export const getWeather = async () => {
