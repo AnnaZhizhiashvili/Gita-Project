@@ -3,7 +3,7 @@ const ROOT_URL = `https://api.thenewsapi.com/v1/news`;
 const urls = {
   latest_posts: `${ROOT_URL}/all?api_token=${apiKey}&language=en`,
   top_posts: `${ROOT_URL}/top?api_token=${apiKey}&language=en`,
-  category: `${ROOT_URL}/all?api_token=${apiKey}&language=en&category=:category`,
+  category: `${ROOT_URL}/all?api_token=${apiKey}&language=en&categories=:category`,
   weatherInTbilisi:
     "https://api.open-meteo.com/v1/forecast?latitude=41.69&longitude=44.83&hourly=temperature_2m",
 };
